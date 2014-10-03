@@ -55,7 +55,9 @@ public class hBans extends JavaPlugin{
 		String database = this.getConfig().getString("database");
 		String prefix = this.getConfig().getString("table prefix");
 		appealMessage = Message.colorize(this.getConfig().getString("appeal message"));
-		loadBlockedCommands();
+		this.getLogger().info("Loading blocked commands...");
+		int numOfBlockedCommands = loadBlockedCommands();
+		this.getLogger().info(numOfBlockedCommands + " commands added.");
 		NameHistoryTable = prefix + "NameHistory";
 		IPHistoryTable = prefix + "IPHistory";
 		BansTable = prefix + "Bans";
@@ -65,22 +67,31 @@ public class hBans extends JavaPlugin{
 		BannedIPsView = prefix + "BannedIPs";
 		db = new MySQL(this, hostname, port, database, username, password);
 		db.openConnection();
-		new Listeners(this);
-		initDB(prefix);
-		registerCommands();
-		loadMutes();
+		if(db.getConnection()==null)
+		{
+			this.getServer().getPluginManager().disablePlugin(this);
+		}
+		else
+		{
+			this.getLogger().info("Preparing the database...");
+			initDB(prefix);
+			registerCommands();
+			loadMutes();
+			new Listeners(this);
+		}
 	}
 	
 	/**
 	 * Loads commands from the config that players cannot use while muted
+	 * @return Number of commands
 	 */
-	private void loadBlockedCommands() {
+	private int loadBlockedCommands() {
 		List<String> commands = this.getConfig().getStringList("Blocked Commands");
-		System.out.println(commands.size());
 		for(String s : commands)
 		{
 			blockedCommands.add("/"+s);
 		}
+		return commands.size();
 	}
 
 	private void loadMutes() {
@@ -98,7 +109,7 @@ public class hBans extends JavaPlugin{
 	}
 
 	private void registerCommands() {
-		getCommand("hygadmin").setExecutor(new HyGAdminHelp());
+		getCommand("hadmin").setExecutor(new HyGAdminHelp());
 		getCommand("ban").setExecutor(new Ban());
 		getCommand("unban").setExecutor(new Unban());
 		getCommand("mute").setExecutor(new Mute());

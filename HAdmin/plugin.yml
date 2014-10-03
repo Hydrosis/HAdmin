@@ -58,7 +58,7 @@ commands:
       usage: /<command> [IP]
       permission: hygadmin.iphistory
       permission-message: You don't have permission to see the player history of IPs!
-   hygadmin:
+   hadmin:
       description: Displays help for HyGAdmin
       usage: /<command>
       permission: hygadmin.hygadmin

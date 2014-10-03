@@ -198,7 +198,7 @@ public class Message {
 	
 	public static void helpHeader(CommandSender sender)
 	{
-		sender.sendMessage(ChatColor.DARK_PURPLE+"HyG Bans Created By: " + ChatColor.DARK_AQUA + "Hydrosis");
+		sender.sendMessage(ChatColor.DARK_PURPLE+"HAdmin Created By: " + ChatColor.DARK_AQUA + "Hydrosis");
 		sender.sendMessage(ChatColor.GREEN+"Definitions: "+ChatColor.DARK_RED+"[required]"+ChatColor.GOLD+" <optional>");
 		sender.sendMessage("            "+ChatColor.YELLOW+" m=minutes,h=hours,d=days");
 		sender.sendMessage(ChatColor.GREEN+"Example: "+ChatColor.BLUE+"/ban "+ChatColor.RED+"hydrosis "+ChatColor.YELLOW+"2d "+ChatColor.GREEN+"Too 1337" );
@@ -267,9 +267,14 @@ public class Message {
 	public static String commandBlocked() {
 		return ChatColor.DARK_RED+ "You cannot use this command while muted!";
 	}
-	
+
+	public static String connectionError() {
+		return "Cannot connect to the database! Please check your connection details in config.yml.";
+	}
+
 	public static String colorize(String message)
 	{
 		return ChatColor.translateAlternateColorCodes('&', message);
 	}
+
 }
