@@ -28,8 +28,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 /**
  * 
  * @author Radwan Faci
- * TODO: Unmute
- * TODO: IP Logging
  */
 public class hBans extends JavaPlugin{
 	public MySQL db;
