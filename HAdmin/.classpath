@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="C:/Users/Radwan Faci/mcserverplugins/bukkit.jar" sourcepath="C:/Users/Radwan Faci/mcserverplugins/Bukkit-Source">
+		<attributes>
+			<attribute name="javadoc_location" value="http://jd.bukkit.org/rb/apidocs/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Radwan Faci/mcserverplugins/Vault.jar" sourcepath="C:/Users/Radwan Faci/mcserverplugins/Vault-master.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="https://github.com/MilkBowl/Vault/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

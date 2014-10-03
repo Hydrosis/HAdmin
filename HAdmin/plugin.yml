@@ -1,0 +1,65 @@
+name: HAdmin
+author: Hydrosis
+version: 1.0
+main: hyg.hydrosis.hbans.hBans
+commands:
+   ban:
+      description: Bans someone. Type "perm" to perm ban.
+      usage: /<command> [player] [time]{m|h|d}
+      permission: hygadmin.ban
+      permission-message: You don't have permission to ban people!
+   unban:
+      description: Unbans someone.
+      usage: /<command> [player]
+      permission: hygadmin.unban
+      permission-message: You don't have permission to unban people!
+   banip:
+      description: Bans an IP. Type "perm" to perm ban.
+      usage: /<command> [player] [time]{m|h|d}
+      permission: hygadmin.banip
+      permission-message: You don't have permission to ban people!
+   unbanip:
+      description: Unbans an IP.
+      usage: /<command> [player]
+      permission: hygadmin.unbanip
+      permission-message: You don't have permission to unban people!
+   kick:
+      description: Kicks a player.
+      usage: /<command> [player] [Reason]
+      permission: hygadmin.kick
+      permission-message: You don't have permission to unban people!
+   banstatus:
+      description: Check the status of someone's ban.
+      usage: /<command> [player]
+      permission: hygadmin.banstatus
+      permission-message: You don't have permission to check ban statuses!
+   mute:
+      description: Mutes someone.
+      usage: /<command> [player] [time]{m|h|d}
+      permission: hygadmin.mute
+      permission-message: You don't have permission to mute people!
+   unmute:
+      description: Unmutes someone.
+      usage: /<command> [player]
+      permission: hygadmin.unmute
+      permission-message: You don't have permission to unmute people!
+   mutestatus:
+      description: Check the status of someone's mute.
+      usage: /<command> [player]
+      permission: hygadmin.mutestatus
+      permission-message: You don't have permission to check mute statuses!
+   iphistory:
+      description: View the IP history of a player.
+      usage: /<command> [player]
+      permission: hygadmin.iphistory
+      permission-message: You don't have permission to see the IP history of players!
+   playerhistory:
+      description: View the player history of an IP.
+      usage: /<command> [IP]
+      permission: hygadmin.iphistory
+      permission-message: You don't have permission to see the player history of IPs!
+   hygadmin:
+      description: Displays help for HyGAdmin
+      usage: /<command>
+      permission: hygadmin.hygadmin
+      permission-message: You don't have permission to see the player history of IPs!

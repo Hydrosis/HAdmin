@@ -1,0 +1,11 @@
+#HyGBans by Hydrosis
+hostname: localhost
+port: 3306
+user: user
+password: pass
+database: minecraft
+table prefix: hban_
+appeal message: &4Please make an appeal on our website!
+Blocked Commands:
+    - msg
+    - me
