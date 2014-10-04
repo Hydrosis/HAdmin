@@ -6,60 +6,60 @@ commands:
    ban:
       description: Bans someone. Type "perm" to perm ban.
       usage: /<command> [player] [time]{m|h|d}
-      permission: hygadmin.ban
+      permission: hadmin.ban
       permission-message: You don't have permission to ban people!
    unban:
       description: Unbans someone.
       usage: /<command> [player]
-      permission: hygadmin.unban
+      permission: hadmin.unban
       permission-message: You don't have permission to unban people!
    banip:
       description: Bans an IP. Type "perm" to perm ban.
       usage: /<command> [player] [time]{m|h|d}
-      permission: hygadmin.banip
+      permission: hadmin.banip
       permission-message: You don't have permission to ban people!
    unbanip:
       description: Unbans an IP.
       usage: /<command> [player]
-      permission: hygadmin.unbanip
+      permission: hadmin.unbanip
       permission-message: You don't have permission to unban people!
    kick:
       description: Kicks a player.
       usage: /<command> [player] [Reason]
-      permission: hygadmin.kick
+      permission: hadmin.kick
       permission-message: You don't have permission to unban people!
    banstatus:
       description: Check the status of someone's ban.
       usage: /<command> [player]
-      permission: hygadmin.banstatus
+      permission: hadmin.banstatus
       permission-message: You don't have permission to check ban statuses!
    mute:
       description: Mutes someone.
       usage: /<command> [player] [time]{m|h|d}
-      permission: hygadmin.mute
+      permission: hadmin.mute
       permission-message: You don't have permission to mute people!
    unmute:
       description: Unmutes someone.
       usage: /<command> [player]
-      permission: hygadmin.unmute
+      permission: hadmin.unmute
       permission-message: You don't have permission to unmute people!
    mutestatus:
       description: Check the status of someone's mute.
       usage: /<command> [player]
-      permission: hygadmin.mutestatus
+      permission: hadmin.mutestatus
       permission-message: You don't have permission to check mute statuses!
    iphistory:
       description: View the IP history of a player.
       usage: /<command> [player]
-      permission: hygadmin.iphistory
+      permission: hadmin.iphistory
       permission-message: You don't have permission to see the IP history of players!
    playerhistory:
       description: View the player history of an IP.
       usage: /<command> [IP]
-      permission: hygadmin.iphistory
+      permission: hadmin.iphistory
       permission-message: You don't have permission to see the player history of IPs!
    hadmin:
-      description: Displays help for HyGAdmin
+      description: Displays help for HAdmin
       usage: /<command>
-      permission: hygadmin.hygadmin
+      permission: hadmin.help
       permission-message: You don't have permission to see the player history of IPs!
